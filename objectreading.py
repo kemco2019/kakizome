@@ -3,12 +3,15 @@ import os
 import time
 
 cap = cv2.VideoCapture(0)
-cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'))
-cap.set(cv2.CAP_PROP_FPS, 30)   
-cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
-cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 960)
-cap.set(cv2.CAP_PROP_AUTOFOCUS, 1)
+
+###以下、カメラの設定。本当はあった方がいいが、入れるとエラーが出る(2024/2現在)
+#cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('M', 'J', 'P', 'G'))
+#cap.set(cv2.CAP_PROP_FPS, 30)   
+#cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
+#cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 960)
+#cap.set(cv2.CAP_PROP_AUTOFOCUS, 1)
 #cap.set(cv2.CAP_PROP_FOCUS, 0.8)
+###以上
 
 n=0;
 
