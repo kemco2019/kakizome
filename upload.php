@@ -27,9 +27,7 @@ try {
             $create_image = imagecreatetruecolor($width,$height);//Canvasの土台作成
             $position_x1 = 0;//画像配置するポジションX
             $position_y1 = 0;//画像配置するポジションX
-            $position_x2 = 422;//画像配置するポジションX
-            $position_y2 = 0;//画像配置するポジションX
-            imagecopy($create_image, $img_left, $position_x1, $position_y1, 290, 440, 397, 547);//コピー先の画像リソース, コピー元の画像リソース, コピー先の x 座標, コピー先の y 座標, コピー元の x 座標,　コピー元の y 座標, コピー元の幅, コピー元の高さ
+            imagecopy($create_image, $img_left, $position_x1, $position_y1, 290, 440, $width, $height);//コピー先の画像リソース, コピー元の画像リソース, コピー先の x 座標, コピー先の y 座標, コピー元の x 座標,　コピー元の y 座標, コピー元の幅, コピー元の高さ
             ImageFilter($create_image, IMG_FILTER_BRIGHTNESS, 50);
             ImageFilter($create_image, IMG_FILTER_CONTRAST, -10);
             
