@@ -10,33 +10,21 @@
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
     <meta charset='utf-8'>
-    
     <title>書き初め2023</title>
-    
 </head>
 
 <body style = "background-color: #EAEAEA;">
-
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
     <script type="text/javascript" src="piece_ajax.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
 
-
-
-
 <?php
-
-
-
 $host = "mysql57.kemco.sakura.ne.jp";
 $dbName = "kemco_kakizome";
 $username = "kemco";
 $password = "h76-id_z";
-
 $dsn = "mysql:host={$host};dbname={$dbName};charser=utf8";
-
-
 
 echo '<div class="flex_box" style = "background-color: #EAEAEA;">';
 echo '<div class="flex_item" style = "background-color: #EAEAEA;"><a href="piece.php"><img style ="width:100%" src="./title.png"></a></div>';
